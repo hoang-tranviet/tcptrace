@@ -116,7 +116,7 @@ Bool show_zwnd_probes = TRUE;
 Bool nonames = FALSE;
 Bool use_short_names = FALSE;
 Bool show_urg = TRUE;
-int thru_interval = 10;	/* in segments */
+int thru_interval = 500;	/* in ms */
 
 
 /* what colors to use */

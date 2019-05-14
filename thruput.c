@@ -112,11 +112,12 @@ DoThru(
     if (nbytes == 0)
 	return;
 
+    etime = elapsed(ptcb->thru_firsttime,current_time);
+
     /* see if we should output the stats yet */
-    if (ptcb->thru_pkts+1 >= thru_interval) {
+    if (etime >= thru_interval*1000) {
 
 	/* compute stats for this interval */
-	etime = elapsed(ptcb->thru_firsttime,current_time);
 	if (etime == 0.0)
 	    etime = 1000;	/* ick, what if "no time" has passed?? */
 	thruput = (double) ptcb->thru_bytes / ((double) etime / 1000000.0);

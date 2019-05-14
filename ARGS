@@ -2,7 +2,7 @@ Fri Nov  6, 1998
 
 In Use Options
 
-  -AN     Average N segments for throughput graphs, default is 10
+  -AN     Time window (ms) for throughput graphs, default is 500 ms
   -BN     first segment number to analyze (default 1)
   -C      produce color plot[s]
   -D      print in decimal
@@ -15,7 +15,7 @@ In Use Options
   -P      print packet contents for selected connections
   -R      create rtt sample graph[s]
   -S      create time sequence graph[s]
-  -T      create throughput graph[s], (average over 10 segments, see -A)
+  -T      create throughput graph[s], (average over 500 ms, see -A)
   -W      report on estimated congestion window (not generally useful)
   -X      print in hexidecimal
   -Z      dump raw rtt sample times to file[s]

@@ -28,7 +28,7 @@ no output (if you just want modules output)
 .I Graphing options
 .TP 5
 .B \-T
-create throughput graph[s], (average over 10 segments, see -A)
+create throughput graph[s], (average over 10 segments or 500 ms, see -A)
 .TP 5
 .B \-R
 create rtt sample graph[s]
